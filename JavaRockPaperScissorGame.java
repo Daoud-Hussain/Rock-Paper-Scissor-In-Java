@@ -95,7 +95,7 @@ public class Practice{
             //If user enter no, loop'll be terminated
             System.out.print("Do you want to Play Again? Yes/No? ");
                     String choice = input.next();
-                    if(choice.equals("No") || choice.equals("NO") || choice.equals("no") )
+                    if(choice.equalsIgnoreCase("No"))
                         flag = true;
         }
     }
