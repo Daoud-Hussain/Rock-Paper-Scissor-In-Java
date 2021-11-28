@@ -15,9 +15,9 @@ public class JavaRockPaperScissorGame{
     public static void main(String[] args) {
         //Initalizing all required variables
         String computerNumber = "";
-        boolean flag = false;
-        //Controling the value of loop using Flag. It'll be true until user ask to exit the game
-        while(!flag){
+        boolean found = false;
+        //Controling the value of loop using found. It'll be true until user ask to exit the game
+        while(!found){
 
             //Creating object to create a random numbers
             Random randomNumber = new Random();
@@ -96,7 +96,7 @@ public class JavaRockPaperScissorGame{
             System.out.print("Do you want to Play Again? Yes/No? ");
                     String choice = input.next();
                     if(choice.equals("No") || choice.equals("NO") || choice.equals("no") )
-                        flag = true;
+                        found = true;
         }
     }
 }
