@@ -40,7 +40,7 @@ public class Practice{
             String userNumber = input.next();
 
             //Checking for Win/Loss
-            if(userNumber.equals("r")){
+            if(userNumber.equalsIgnoreCase("r")){
                 if (computerNumber.equals("s")){
                     System.out.println("You Won! ");
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
