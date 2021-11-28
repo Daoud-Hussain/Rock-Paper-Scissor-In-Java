@@ -36,7 +36,7 @@ public class JavaRockPaperScissorGame{
 
             //Taking input for user his choice
             Scanner input = new Scanner(System.in);
-            System.out.print("Enter 'r' for 'Rock', 'p' for 'Paper', 's' for 'Scissor': ");
+            System.out.print("Enter 'R' for 'Rock', 'P' for 'Paper', 'S' for 'Scissor': ");
             String userNumber = input.next();
 
             //Checking for Win/Loss
