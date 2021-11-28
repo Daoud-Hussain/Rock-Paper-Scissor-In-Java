@@ -56,7 +56,7 @@ public class Practice{
 
             }
 
-            else if(userNumber.equals("p") || userNumber.equals("P")){
+            else if(userNumber.equals("p")){
                 if (computerNumber.equals("r")){
                     System.out.println("You Won! ");
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
