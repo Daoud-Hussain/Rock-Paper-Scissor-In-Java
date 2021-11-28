@@ -56,7 +56,7 @@ public class Practice{
 
             }
 
-            else if(userNumber.equals("p")){
+            else if(userNumber.equalsIgnoreCase("p")){
                 if (computerNumber.equals("r")){
                     System.out.println("You Won! ");
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
