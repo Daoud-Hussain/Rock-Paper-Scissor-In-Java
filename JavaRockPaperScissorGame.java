@@ -16,7 +16,7 @@ public class JavaRockPaperScissorGame{
         //Initalizing all required variables
         String computerNumber = "";
         boolean flag = false;
-        //Controling the value of loop using found. It'll be true until user ask to exit the game
+        //Controling the value of loop using flag. It'll be true until user ask to exit the game
         while(!found){
 
             //Creating object to create a random numbers
