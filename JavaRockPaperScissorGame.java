@@ -96,7 +96,7 @@ public class JavaRockPaperScissorGame{
             System.out.print("Do you want to Play Again? Yes/No? ");
                     String choice = input.next();
                     if(choice.equals("No") || choice.equals("NO") || choice.equals("no") )
-                        found = true;
+                        flag = true;
         }
     }
 }
