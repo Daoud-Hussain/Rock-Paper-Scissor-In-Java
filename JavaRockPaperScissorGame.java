@@ -12,6 +12,7 @@ import java.util.Random;
 
 public class Practice{
     public static void main(String[] args) {
+        
         //Initalizing all required variables
         String computerNumber = "";
         int myScore = 0, compScore = 0;
