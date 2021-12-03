@@ -7,17 +7,17 @@
         and "Paper" beats "Rock" by covering it. Whenever one player wins, the other loses.
 */
 
-//Importing java packages to be used
 import java.util.Scanner;
 import java.util.Random;
 
-public class JavaRockPaperScissorGame{
+public class Practice{
     public static void main(String[] args) {
         //Initalizing all required variables
         String computerNumber = "";
-        boolean flag = false;
-        //Controling the value of loop using flag. It'll be true until user ask to exit the game
-        while(!flag){
+        int myScore = 0, compScore = 0;
+
+        //Starting loop for 10 rounds
+        for(int i = 1; i <= 10; i++){ 
 
             //Creating object to create a random numbers
             Random randomNumber = new Random();
@@ -34,7 +34,8 @@ public class JavaRockPaperScissorGame{
                 computerNumber = "s";
             }
 
-            //Taking input for user his choice
+            System.out.println("Round: " + i);
+            //Taking choice of user as input
             Scanner input = new Scanner(System.in);
             System.out.print("Enter 'R' for 'Rock', 'P' for 'Paper', 'S' for 'Scissor': ");
             String userNumber = input.next();
@@ -46,48 +47,55 @@ public class JavaRockPaperScissorGame{
             */
             if(userNumber.equalsIgnoreCase("r")){
                 if (computerNumber.equals("s")){
-                    System.out.println("You Won! ");
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
+                    myScore += 1;           //Updating User Score as he won!
+                    System.out.println();
+
                 }
                 else if (computerNumber.equals("p")){
-                    System.out.println("You Loss! ");
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
+                    compScore += 1;         //Updating Computer Score as he won!
+                    System.out.println();
                 }
                 else{
-                    System.out.println("This is a Tie! ");
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
+                    System.out.println();
                 }
 
             }
 
             else if(userNumber.equalsIgnoreCase("p")){
                 if (computerNumber.equals("r")){
-                    System.out.println("You Won! ");
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
+                    myScore += 1;           //Updating User Score as he won!
+                    System.out.println();
                 }
                 else if (computerNumber.equals("s")){
-                    System.out.println("You Loss! ");
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
+                    compScore += 1;         //Updating Computer Score as he won!
+                    System.out.println();
                 }
                 else{
-                    System.out.println("This is a Tie! ");
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
+                    System.out.println();
                 }
 
             }
 
             else if(userNumber.equalsIgnoreCase("s")){
                 if (computerNumber.equals("p")){
-                    System.out.println("You Won! ");
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
+                    myScore += 1;           //Updating User Score as he won!
+                    System.out.println();
                 }
                 else if (computerNumber.equals("r")){
-                    System.out.println("You Loss! ");
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
+                    compScore += 1;         //Updating User Score as he won!
+                    System.out.println();
                 }
                 else{
-                    System.out.println("This is a Tie! ");
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
+                    System.out.println();
                 }
 
             }
@@ -95,12 +103,39 @@ public class JavaRockPaperScissorGame{
             //For invalid input case
             else{
                 System.out.println("Invalid Input! Please Try again");
+                System.out.println();
             }
-            //If user enter no, loop'll be terminated
-            System.out.print("Do you want to Play Again? Yes/No? ");
+            if(i == 10){
+              //Checking for Win/Loss
+                if(myScore > compScore){
+                    System.out.println("Congratulations! You Won.");
+                    System.out.println("Computer Scored: "+ compScore + " and you Scored: "+ myScore);
+                }
+                else if(compScore > myScore){
+                    System.out.println("You Loss. Try Again!");
+                    System.out.println("Computer Scored: "+ compScore + " and you Scored: "+ myScore);
+                } 
+                else{
+                    System.out.println("This is a Tye!");
+                    System.out.println("Computer Scored: "+ compScore + " and you Scored: "+ myScore);
+                }
+
+                //Asking user if he want to play again
+                System.out.print("Do you want to Play Again? Yes/No? ");
                     String choice = input.next();
-                    if(choice.equalsIgnoreCase("No"))
-                        flag = true;
+                    System.out.println();
+                    if(choice.equalsIgnoreCase("No")){
+                        break;  
+                    }
+                    //If user want to play again, reinitialized the program to start again
+                    else if(choice.equalsIgnoreCase("Yes")){
+                        i=0;  
+                        myScore = 0;
+                        compScore = 0;
+                    }
+            }
+            
         }
+
     }
 }
