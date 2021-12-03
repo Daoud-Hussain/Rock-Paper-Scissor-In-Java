@@ -48,7 +48,7 @@ public class JavaRockPaperScissorGame{
             if(userNumber.equalsIgnoreCase("r")){
                 if (computerNumber.equals("s")){
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
-                    myScore += 1;           //Updating User Score as he won!
+                    userScore += 1;           //Updating User Score as he won!
                     System.out.println();
 
                 }
@@ -67,7 +67,7 @@ public class JavaRockPaperScissorGame{
             else if(userNumber.equalsIgnoreCase("p")){
                 if (computerNumber.equals("r")){
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
-                    myScore += 1;           //Updating User Score as he won!
+                    userScore += 1;           //Updating User Score as he won!
                     System.out.println();
                 }
                 else if (computerNumber.equals("s")){
@@ -85,7 +85,7 @@ public class JavaRockPaperScissorGame{
             else if(userNumber.equalsIgnoreCase("s")){
                 if (computerNumber.equals("p")){
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
-                    myScore += 1;           //Updating User Score as he won!
+                    userScore += 1;           //Updating User Score as he won!
                     System.out.println();
                 }
                 else if (computerNumber.equals("r")){
@@ -107,17 +107,17 @@ public class JavaRockPaperScissorGame{
             }
             if(i == 10){
               //Checking for Win/Loss
-                if(myScore > compScore){
+                if(userScore > compScore){
                     System.out.println("Congratulations! You Won.");
-                    System.out.println("Computer Scored: "+ compScore + " and you Scored: "+ myScore);
+                    System.out.println("Computer Scored: "+ compScore + " and you Scored: "+ userScore);
                 }
-                else if(compScore > myScore){
+                else if(compScore > userScore){
                     System.out.println("You Loss. Try Again!");
-                    System.out.println("Computer Scored: "+ compScore + " and you Scored: "+ myScore);
+                    System.out.println("Computer Scored: "+ compScore + " and you Scored: "+ userScore);
                 } 
                 else{
                     System.out.println("This is a Tye!");
-                    System.out.println("Computer Scored: "+ compScore + " and you Scored: "+ myScore);
+                    System.out.println("Computer Scored: "+ compScore + " and you Scored: "+ userScore);
                 }
 
                 //Asking user if he want to play again
@@ -130,7 +130,7 @@ public class JavaRockPaperScissorGame{
                     //If user want to play again, reinitialized the program to start again
                     else if(choice.equalsIgnoreCase("Yes")){
                         i=0;  
-                        myScore = 0;
+                        userScore = 0;
                         compScore = 0;
                     }
             }
