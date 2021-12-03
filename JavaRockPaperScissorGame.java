@@ -41,7 +41,6 @@ public class JavaRockPaperScissorGame{
             System.out.print("Enter 'R' for 'Rock', 'P' for 'Paper', 'S' for 'Scissor': ");
             String userNumber = input.next();
 
-            //Checking for Win/Loss
             /*
             The equalsIgnoreCase() method of the String class compares two strings irrespective of the case (lower or upper)
             of the string. This method returns a boolean value, true or false
@@ -91,7 +90,7 @@ public class JavaRockPaperScissorGame{
                 }
                 else if (computerNumber.equals("r")){
                     System.out.println("Computer Entered "+ computerNumber + " and You Entered "+ userNumber);
-                    compScore += 1;         //Updating User Score as he won!
+                    compScore += 1;         //Updating computer Score as he won!
                     System.out.println();
                 }
                 else{
