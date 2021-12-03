@@ -15,7 +15,7 @@ public class JavaRockPaperScissorGame{
         
         //Initalizing all required variables
         String computerNumber = "";
-        int myScore = 0, compScore = 0;
+        int userScore = 0, compScore = 0;
 
         //Starting loop for 10 rounds
         for(int i = 1; i <= 10; i++){ 
