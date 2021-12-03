@@ -10,7 +10,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class Practice{
+public class JavaRockPaperScissorGame{
     public static void main(String[] args) {
         
         //Initalizing all required variables
@@ -133,9 +133,7 @@ public class Practice{
                         userScore = 0;
                         compScore = 0;
                     }
-            }
-            
+            }   
         }
-
     }
 }
