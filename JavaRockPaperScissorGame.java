@@ -7,7 +7,7 @@
         and "Paper" beats "Rock" by covering it. Whenever one player wins, the other loses.
 */
 
-import java.util.Scanner;
+import java.util.*;
 import java.util.Random;
 
 public class JavaRockPaperScissorGame{
