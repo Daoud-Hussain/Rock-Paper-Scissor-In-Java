@@ -1,4 +1,11 @@
-
+/*
+    Rock-Paper-Scissor Game
+    Rules:
+        The familiar game of Rock, Paper, Scissors is played like this: at the same time,
+        two players display one of three symbols: a rock, paper, or scissors. 
+        A "Rock" beats 'Scissor' by breaking it, "Scissors" beat "Paper" by cutting it, 
+        and "Paper" beats "Rock" by covering it. Whenever one player wins, the other loses.
+*/
 
 import java.util.Scanner;
 import java.util.Random;
