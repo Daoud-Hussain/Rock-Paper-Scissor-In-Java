@@ -10,7 +10,7 @@
 import java.util.*;
 import java.util.Random;
 
-public class JavaRockPaperScissorGame{
+public class {
     public static void main(String[] args) {
         
         //Initalizing all required variables
